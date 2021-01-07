@@ -1,10 +1,12 @@
 Package: dcData
 Type: Package
-Title: DataComputing Data Sets
+Title: Data Sets Accompanying DataComputing eBook
 Version: 0.1.0
 Author: Matthew Beckman, Daniel Kaplan
 Maintainer: Matthew Beckman <mdb268@psu.edu>
-Description: Data sets accompanying the *DataComputing* eBook <https://dtkaplan.github.io/DataComputingEbook/> used to teach wrangling and visualization techniques for turning data into information.
+Description: Data sets accompanying the *DataComputing* eBook 
+    <https://dtkaplan.github.io/DataComputingEbook/> used to teach wrangling 
+    and visualization techniques for turning data into information.
 License: CC BY 4.0
 Encoding: UTF-8
 LazyData: true
