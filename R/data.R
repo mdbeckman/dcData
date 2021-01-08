@@ -317,6 +317,74 @@
 "MedicareCharges"
 
 
+### MedicareProviders ####
+
+#' @title Medicare Providers
+#'
+#' @description Name and location data for the medicare providers in the
+#' `MedicareCharges` data table.
+#'
+#' @docType data
+#'
+#' @usage data("MedicareProviders")
+#'
+#' @format A data frame with 3337 observations on the following 7 variables:
+#' \describe{
+#'   \item{idProvider}{a unique number assigned to each provider}
+#'   \item{nameProvider}{Name of the provider. (text string)}
+#'   \item{addressProvider}{Street address of the provider. (text string)}
+#'   \item{cityProvider}{The name of the city in which the provider is located. (factor)}
+#'   \item{stateProvider}{The two-letter postal code of the state in which the provider is located. (factor)}
+#'   \item{zipProvider}{The provider's ZIP code. (factor)}
+#'   \item{referralRegion}{An identifier for the region serviced by the provider.}
+#' }
+#'
+#' @details This data table is related to `MedicareCharges` data.
+#'
+#' @source Extracted from the highly repetitive table provided by the Centers
+#' for Medicare and Medicaid Services. See
+#' <http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html>
+#'
+#' @examples
+#' head(MedicareProviders)
+#' str(MedicareProviders)
+"MedicareProviders"
+
+
+### MigrationFlows ####
+
+#' @title Human Migration between Countries
+#'
+#' @description The number of people who moved in from one country to another.
+#' Data are provided for 1960, 1970, 1980, 1990, and 2000. There are separate
+#' counts for males and females.
+#'
+#' @docType data
+#'
+#' @usage data("MigrationFlows")
+#'
+#' @format A data frame with 107184 observations on the following 8 variables:
+#' \describe{
+#'   \item{sex}{a factor with levels Female and Male}
+#'   \item{destcode}{three letter country codes indicating the destination of the migrants}
+#'   \item{origincode}{three letter country codes indicating where the migrants left}
+#'   \item{Y2000}{Migration in year 2000. The value is the number of people
+#'   (males and females separately) who migrated from the origin country to the destination country.}
+#'   \item{Y1990}{Migration in year 1990}
+#'   \item{Y1980}{Migration in year 1980}
+#'   \item{Y1970}{Migration in year 1970}
+#'   \item{Y1960}{Migration in year 1960}
+#' }
+#'
+#' @source The World Bank's Global Bilateral Migration Database:
+#' <http://data.worldbank.org/data-catalog/global-bilateral-migration-databas>
+#'
+#' @examples
+#' data(MigrationFlows)
+#' str(MigrationFlows)
+"MigrationFlows"
+
+
 
 
 
