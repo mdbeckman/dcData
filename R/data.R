@@ -1,14 +1,16 @@
 ### BabyNames ####
 
-#' Names of children as recorded by the US Social Security Administration.
+#' @title Names of children as recorded by the US Social Security Administration.
 #'
-#' The US Social Security Administration provides yearly lists of names given
+#' @description The US Social Security Administration provides yearly lists of names given
 #' to babies. These data combine the yearly lists.
 #'
 #' `BabyNames` is the raw data from the SSA. The case is a year-name-sex, for
 #' example: Jane F 1922. The count is the number of children of that sex given
 #' that name in that year. Names assigned to fewer than five children of one
 #' sex in any year are not listed, presumably out of privacy concerns.
+#'
+#' @docType data
 #'
 #' @usage data("BabyNames")
 #'
@@ -31,11 +33,13 @@
 
 ### CountryCentroids ####
 
-#' Geographic locations of countries
+#' @title Geographic locations of countries
 #'
-#' Gives the latitude and longitude for many countries. A single point — the
+#' @description Gives the latitude and longitude for many countries. A single point — the
 #' centroid of the country's boundaries — is given. Countries are identified
 #' by English name and by the ISO A3 code.
+#'
+#' @docType data
 #'
 #' @usage data("CountryCentroids")
 #'
@@ -58,14 +62,16 @@
 
 ### CountryData ####
 
-#' Many variables on countries from the CIA factbook (2014)
+#' @title Many variables on countries from the CIA factbook (2014)
 #'
-#' The CIA Factbook has geographic, demographic, and economic data on a
+#' @description The CIA Factbook has geographic, demographic, and economic data on a
 #' country-by-country basis. In the description of the variables, the 4-digit
 #' number indicates the code used to specify that variable on the data and
 #' documentation web site. For instance,
 #' https://www.cia.gov/library/publications/the-world-factbook/fields/2153.html
 #' contains documentation for variable code 2153, network users.
+#'
+#' @docType data
 #'
 #' @usage data("CountryData")
 #'
@@ -149,8 +155,8 @@
 #'   \item{military}{Military expenditures (\% of GDP), 2034}
 #' }
 #'
-#' @details These data were collected using the mosaic::CIAdata() function.
-#' See the output of mosaic::CIAdata() and Internet search "CIA Factbook NNNN",
+#' @details These data were collected using the `mosaic::CIAdata()` function.
+#' See the output of `mosaic::CIAdata()` and Internet search "CIA Factbook NNNN",
 #' where NNNN is the 4-digit code used for indexing the data at the CIA.
 #'
 #' @source From the CIA World Factbook,
@@ -161,6 +167,157 @@
 #' data(CountryData)
 #' str(CountryData)
 "CountryData"
+
+
+### CountryGroups ####
+
+#' @title Membership in Country Groups
+#'
+#' @description A data frame listing countries with logical variables indicating whether
+#' each country belongs to the G8, the G20, or the GGG.
+#'
+#' @docType data
+#'
+#' @usage data("CountryGroups")
+#'
+#' @format
+#' \describe{
+#'   \item{G8}{country belongs to G8}
+#'   \item{G20}{country belongs to G20}
+#'   \item{GGG}{country belongs to GGG (global governance group)}
+#' }
+#'
+#' @details The country names are standardized to the CIA World Factbook names.
+#' Each of the variables G8, G20, GGG is a logical variable. TRUE means the
+#' country belongs to the corresponding group.
+#'
+#' @source http://en.wikipedia.org/wiki/G8,
+#' https://www.g20.org/about_g20/g20_members,
+#' http://www.mfa.gov.sg/content/mfa/overseasmission/newyork/nyemb_statements/global_governance_group/2012/201209/press_20122809.html
+#'
+#' @examples
+#' data(CountryGroups)
+#' str(CountryGroups)
+"CountryGroups"
+
+
+### DirectRecoveryGroups ####
+
+#' @title Descriptions of the Direct Recovery Groups (DRGs) in the Medicare data.
+#'
+#' @description Provides the medical meaning of the DRG codes.
+#'
+#' @docType data
+#'
+#' @usage data("DirectRecoveryGroups")
+#'
+#' @format A data frame with 100 observations on the following 2 variables:
+#' \describe{
+#'   \item{drg}{a character string that looks like a number}
+#'   \item{drgDefinition}{a text description of the DRG}
+#' }
+#'
+#' @details This data table is related to `MedicareCharges` and `MedicareProviders`.
+#'
+#' @source Extracted from the highly repetitive table provided by the Centers
+#' for Medicare and Medicaid Services. See
+#' http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html
+#'
+#' @examples
+#' head(DirectRecoveryGroups)
+"DirectRecoveryGroups"
+
+
+### HappinessIndex ####
+
+#' @title World Happiness Report Data
+#'
+#' @description The United Nations Sustainable Development Solutions Network
+#' releases a report giving several indices of "happiness" measured for each of
+#' more than 150 countries. These data are from the 2013 report
+#' (http://unsdsn.org/resources/publications/world-happiness-report-2013/).
+#' Underlying the data are the results of Gallop World Polls — the country data
+#' is presumably the aggregate of data from individual people, although how the
+#' aggregate is made is uncertain to this writer.
+#'
+#' @docType data
+#'
+#' @usage data("HappinessIndex")
+#'
+#' @format A data frame with 156 observations on the following 13 variables:
+#' \describe{
+#'   \item{country}{name of the country}
+#'   \item{region}{numerical code for a region of the world}
+#'   \item{score}{The happiness index: a number from 0 to 10}
+#'   \item{socialSupport}{A measure of having someone to count on}
+#'   \item{freedom}{Perceived freedom to make life choices}
+#'   \item{corruption}{Freedom from corruption}
+#'   \item{donation}{}
+#'   \item{generosity}{The generosity of people}
+#'   \item{affectPos}{}
+#'   \item{affectNeg}{}
+#'   \item{happinessYesterday}{A presumably subjective measure of how happy the
+#'   poll respondants were the day before the poll.}
+#'   \item{gdpPerCapita}{In dollars}
+#'   \item{lifeExpectancy}{The "healthy life expectancy" in years.}
+#' }
+#'
+#' @details The healthy life expectancy (HALE) is a World Health Organization
+#' measure of how long, on average, a person can be expected to live in good
+#' health.
+#'
+#' The data were scraped from a PDF file released by the United Nations. A few
+#' country names were changed to match those in `CountryData` (e.g., Myanmar ->
+#' Burma). Not all of the `HappinessIndex` countries are in `CountryData`, and vice
+#' versa.
+#'
+#' @source The World Happiness Report is at
+#' http://unsdsn.org/wp-content/uploads/2014/02/WorldHappinessReport2013_online.pdf
+#' The original data used to create `HappinessIndex` are at
+#' http://unsdsn.org/wp-content/uploads/2013/09/Chapter-2_online-appendix_9-5-13_final.pdf
+#'
+#' @examples
+#' data(HappinessIndex)
+#' str(HappinessIndex)
+"HappinessIndex"
+
+
+### MedicareCharges ####
+
+#' @title Charges to and Payments from Medicare
+#'
+#' @description These data for 2011, released in May 2013, describe how much
+#' hospitals charged Medicare for various inpatient procedures, how many were
+#' performed, and how much Medicare actually paid.
+#'
+#' @docType data
+#'
+#' @usage data("MedicareCharges")
+#'
+#' @format A data frame with 163065 observations on the following 5 variables:
+#' \describe{
+#'   \item{drg}{Code for the Direct Recovery Group: a character string that looks like a number.}
+#'   \item{idProvider}{Provider ID: a numeric vector: it should be a factor.}
+#'   \item{totalDischarges}{}
+#'   \item{aveCharges}{}
+#'   \item{avePayments}{}
+#' }
+#'
+#' @details These data are part of a set with `DirectRecoveryGroups`, which
+#' gives a description of the medical procedure associated with each DRG, and
+#' `MedicareProviders`, which translates `idProvider` into a name, address, state,
+#' Zip, etc.
+#'
+#' @source Data from the Centers for Medicare and Medicaid Services. See
+#' <http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html>.
+#'
+#' @examples
+#' data(MedicareCharges)
+#' str(MedicareCharges)
+"MedicareCharges"
+
+
+
 
 
 

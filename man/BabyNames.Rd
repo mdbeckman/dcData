@@ -23,8 +23,7 @@ data("BabyNames")
 \description{
 The US Social Security Administration provides yearly lists of names given
 to babies. These data combine the yearly lists.
-}
-\details{
+
 `BabyNames` is the raw data from the SSA. The case is a year-name-sex, for
 example: Jane F 1922. The count is the number of children of that sex given
 that name in that year. Names assigned to fewer than five children of one
