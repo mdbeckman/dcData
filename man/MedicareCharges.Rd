@@ -29,7 +29,7 @@ performed, and how much Medicare actually paid.
 \details{
 These data are part of a set with `DirectRecoveryGroups`, which
 gives a description of the medical procedure associated with each DRG, and
-`MedicareProviders`, which translates idProvider into a name, address, state,
+`MedicareProviders`, which translates `idProvider` into a name, address, state,
 Zip, etc.
 }
 \examples{

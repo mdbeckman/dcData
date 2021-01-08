@@ -14,7 +14,7 @@ A data frame with 100 observations on the following 2 variables:
 \source{
 Extracted from the highly repetitive table provided by the Centers
 for Medicare and Medicaid Services. See
-http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html
+<http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html>
 }
 \usage{
 data("DirectRecoveryGroups")
@@ -23,7 +23,7 @@ data("DirectRecoveryGroups")
 Provides the medical meaning of the DRG codes.
 }
 \details{
-This data table is related to MedicareCharges and MedicareProviders.
+This data table is related to `MedicareCharges` and `MedicareProviders`.
 }
 \examples{
 head(DirectRecoveryGroups)

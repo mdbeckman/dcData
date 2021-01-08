@@ -23,7 +23,7 @@
 #' }
 #'
 #' @source The data were compiled from the US Social Security Administration
-#' web site: http://www.ssa.gov/oact/babynames/names.zip
+#' web site: <http://www.ssa.gov/oact/babynames/names.zip>
 #'
 #' @examples
 #' data(BabyNames)
@@ -68,7 +68,7 @@
 #' country-by-country basis. In the description of the variables, the 4-digit
 #' number indicates the code used to specify that variable on the data and
 #' documentation web site. For instance,
-#' https://www.cia.gov/library/publications/the-world-factbook/fields/2153.html
+#' <https://www.cia.gov/library/publications/the-world-factbook/fields/2153.html>
 #' contains documentation for variable code 2153, network users.
 #'
 #' @docType data
@@ -160,8 +160,8 @@
 #' where NNNN is the 4-digit code used for indexing the data at the CIA.
 #'
 #' @source From the CIA World Factbook,
-#' https://www.cia.gov/library/publications/the-world-factbook/
-#' For package maintainers: The lines to construct the file are in inst/datafixes.R.
+#' <https://www.cia.gov/library/publications/the-world-factbook/>
+#' For package maintainers: The lines to construct the file are in `inst/datafixes.R`.
 #'
 #' @examples
 #' data(CountryData)
@@ -191,9 +191,9 @@
 #' Each of the variables G8, G20, GGG is a logical variable. TRUE means the
 #' country belongs to the corresponding group.
 #'
-#' @source http://en.wikipedia.org/wiki/G8,
-#' https://www.g20.org/about_g20/g20_members,
-#' http://www.mfa.gov.sg/content/mfa/overseasmission/newyork/nyemb_statements/global_governance_group/2012/201209/press_20122809.html
+#' @source <http://en.wikipedia.org/wiki/G8>,
+#' <https://www.g20.org/about_g20/g20_members>,
+#' <http://www.mfa.gov.sg/content/mfa/overseasmission/newyork/nyemb_statements/global_governance_group/2012/201209/press_20122809.html>
 #'
 #' @examples
 #' data(CountryGroups)
@@ -221,7 +221,7 @@
 #'
 #' @source Extracted from the highly repetitive table provided by the Centers
 #' for Medicare and Medicaid Services. See
-#' http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html
+#' <http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html>
 #'
 #' @examples
 #' head(DirectRecoveryGroups)
@@ -235,7 +235,7 @@
 #' @description The United Nations Sustainable Development Solutions Network
 #' releases a report giving several indices of "happiness" measured for each of
 #' more than 150 countries. These data are from the 2013 report
-#' (http://unsdsn.org/resources/publications/world-happiness-report-2013/).
+#' (<http://unsdsn.org/resources/publications/world-happiness-report-2013/>).
 #' Underlying the data are the results of Gallop World Polls — the country data
 #' is presumably the aggregate of data from individual people, although how the
 #' aggregate is made is uncertain to this writer.
@@ -272,9 +272,9 @@
 #' versa.
 #'
 #' @source The World Happiness Report is at
-#' http://unsdsn.org/wp-content/uploads/2014/02/WorldHappinessReport2013_online.pdf
+#' <http://unsdsn.org/wp-content/uploads/2014/02/WorldHappinessReport2013_online.pdf>
 #' The original data used to create `HappinessIndex` are at
-#' http://unsdsn.org/wp-content/uploads/2013/09/Chapter-2_online-appendix_9-5-13_final.pdf
+#' <http://unsdsn.org/wp-content/uploads/2013/09/Chapter-2_online-appendix_9-5-13_final.pdf>
 #'
 #' @examples
 #' data(HappinessIndex)

@@ -25,9 +25,9 @@ A data frame with 156 observations on the following 13 variables:
 }
 \source{
 The World Happiness Report is at
-http://unsdsn.org/wp-content/uploads/2014/02/WorldHappinessReport2013_online.pdf
+<http://unsdsn.org/wp-content/uploads/2014/02/WorldHappinessReport2013_online.pdf>
 The original data used to create `HappinessIndex` are at
-http://unsdsn.org/wp-content/uploads/2013/09/Chapter-2_online-appendix_9-5-13_final.pdf
+<http://unsdsn.org/wp-content/uploads/2013/09/Chapter-2_online-appendix_9-5-13_final.pdf>
 }
 \usage{
 data("HappinessIndex")
@@ -36,7 +36,7 @@ data("HappinessIndex")
 The United Nations Sustainable Development Solutions Network
 releases a report giving several indices of "happiness" measured for each of
 more than 150 countries. These data are from the 2013 report
-(http://unsdsn.org/resources/publications/world-happiness-report-2013/).
+(<http://unsdsn.org/resources/publications/world-happiness-report-2013/>).
 Underlying the data are the results of Gallop World Polls — the country data
 is presumably the aggregate of data from individual people, although how the
 aggregate is made is uncertain to this writer.
@@ -47,8 +47,8 @@ measure of how long, on average, a person can be expected to live in good
 health.
 
 The data were scraped from a PDF file released by the United Nations. A few
-country names were changed to match those in CountryData (e.g., Myanmar ->
-Burma). Not all of the HappinessIndex countries are in CountryData, and vice
+country names were changed to match those in `CountryData` (e.g., Myanmar ->
+Burma). Not all of the `HappinessIndex` countries are in `CountryData`, and vice
 versa.
 }
 \examples{

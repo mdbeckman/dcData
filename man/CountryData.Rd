@@ -87,8 +87,8 @@ A data frame on the following 76 variables for each of 256 Countries in the Worl
 }
 \source{
 From the CIA World Factbook,
-https://www.cia.gov/library/publications/the-world-factbook/
-For package maintainers: The lines to construct the file are in inst/datafixes.R.
+<https://www.cia.gov/library/publications/the-world-factbook/>
+For package maintainers: The lines to construct the file are in `inst/datafixes.R`.
 }
 \usage{
 data("CountryData")
@@ -98,12 +98,12 @@ The CIA Factbook has geographic, demographic, and economic data on a
 country-by-country basis. In the description of the variables, the 4-digit
 number indicates the code used to specify that variable on the data and
 documentation web site. For instance,
-https://www.cia.gov/library/publications/the-world-factbook/fields/2153.html
+<https://www.cia.gov/library/publications/the-world-factbook/fields/2153.html>
 contains documentation for variable code 2153, network users.
 }
 \details{
-These data were collected using the mosaic::CIAdata() function.
-See the output of mosaic::CIAdata() and Internet search "CIA Factbook NNNN",
+These data were collected using the `mosaic::CIAdata()` function.
+See the output of `mosaic::CIAdata()` and Internet search "CIA Factbook NNNN",
 where NNNN is the 4-digit code used for indexing the data at the CIA.
 }
 \examples{
