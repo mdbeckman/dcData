@@ -15,7 +15,7 @@ A data frame with 1,792,091 entries on four variables:
 }
 \source{
 The data were compiled from the US Social Security Administration
-web site: <http://www.ssa.gov/oact/babynames/names.zip>
+web site: http://www.ssa.gov/oact/babynames/names.zip
 }
 \usage{
 data("BabyNames")

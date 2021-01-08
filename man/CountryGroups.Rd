@@ -12,9 +12,9 @@
 }
 }
 \source{
-<http://en.wikipedia.org/wiki/G8>,
-<https://www.g20.org/about_g20/g20_members>,
-<http://www.mfa.gov.sg/content/mfa/overseasmission/newyork/nyemb_statements/global_governance_group/2012/201209/press_20122809.html>
+http://en.wikipedia.org/wiki/G8,
+https://www.g20.org/about_g20/g20_members ,
+http://www.mfa.gov.sg/content/mfa/overseasmission/newyork/nyemb_statements/global_governance_group/2012/201209/press_20122809.html
 }
 \usage{
 data("CountryGroups")

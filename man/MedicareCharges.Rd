@@ -16,7 +16,7 @@ A data frame with 163065 observations on the following 5 variables:
 }
 \source{
 Data from the Centers for Medicare and Medicaid Services. See
-<http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html>.
+http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html .
 }
 \usage{
 data("MedicareCharges")

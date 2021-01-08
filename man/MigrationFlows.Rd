@@ -20,7 +20,7 @@ A data frame with 107184 observations on the following 8 variables:
 }
 \source{
 The World Bank's Global Bilateral Migration Database:
-\url{http://data.worldbank.org/data-catalog/global-bilateral-migration-databas}
+http://data.worldbank.org/data-catalog/global-bilateral-migration-databas
 }
 \usage{
 data("MigrationFlows")
