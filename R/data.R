@@ -377,7 +377,7 @@
 #' }
 #'
 #' @source The World Bank's Global Bilateral Migration Database:
-#' <http://data.worldbank.org/data-catalog/global-bilateral-migration-databas>
+#' \url{http://data.worldbank.org/data-catalog/global-bilateral-migration-databas}
 #'
 #' @examples
 #' data(MigrationFlows)
