@@ -385,8 +385,90 @@
 "MigrationFlows"
 
 
+### Minneapolis2013 ####
+
+#' @title Ballots in the 2013 Mayoral election in Minneapolis
+#'
+#' @description The choices marked on each (valid) ballot for the election,
+#' which was run using a rank-choice, instant runoff system.
+#'
+#' @docType data
+#'
+#' @usage data("Minneapolis2013")
+#'
+#' @format A data frame with 80101 observations on the following 5 variables. All are stored as character strings.
+#' \describe{
+#'   \item{Precinct}{Precincts are sub-divisions within Wards}
+#'   \item{First}{The voter's first choice}
+#'   \item{Second}{The voter's second choice}
+#'   \item{Third}{The voter's third choice}
+#'   \item{Ward}{The city is divided spatially into districts or 'wards'. These
+#'   are further subdivided into precincts}
+#' }
+#'
+#' @details Ballot information for the 2013 Minneapolis Mayoral election, which
+#' was run as a rank-choice election. In rank-choice, a voter can indicate
+#' first, second, and third choices. If a voter's first choice is eliminated
+#' (by being last in the count across voters), the second choice is promoted to
+#' that voter's first choice, and similarly third -> second. Eliminations are
+#' done successively until one candidate has a majority of the first-choice
+#' votes.
+#'
+#' @source Ballot data from the Minneapolis city government:
+#' https://vote.minneapolismn.gov/results-data/election-results/
+#'
+#' @references
+#' Description of ranked-choice voting: http://vote.minneapolismn.gov/rcv/index.htm
+#'
+#' A Minnesota Public Radio story about the election ballot tallying process:
+#' http://minnesota.publicradio.org/display/web/2013/11/22/politics/ranked-choice-vote-count-programmers
+#'
+#' The Wikipedia article about the election:
+#' http://en.wikipedia.org/wiki/Minneapolis_mayoral_election,_2013
+#'
+#' @examples
+#' data(Minneapolis2013)
+#' str(Minneapolis2013)
+"Minneapolis2013"
 
 
+### Minneapolis2017 ####
+
+#' @title Ballots in the 2017 Mayoral election in Minneapolis
+#'
+#' @description The choices marked on each (valid) ballot for the election,
+#' which was run using a rank-choice, instant runoff system.
+#'
+#' @docType data
+#'
+#' @usage data("Minneapolis2017")
+#'
+#' @format A data frame with 105,928 observations on the following 5 variables:
+#' \describe{
+#'   \item{precinct}{Precincts are sub-divisions within `wards`}
+#'   \item{first}{The voter's first choice}
+#'   \item{second}{The voter's second choice}
+#'   \item{third}{The voter's third choice}
+#'   \item{ward}{The city is divided spatially into districts or 'wards'. These
+#'   are further subdivided into precincts}
+#' }
+#'
+#' @details Ballot information for the 2017 Minneapolis Mayoral election, which
+#' was run as a rank-choice election. In rank-choice, a voter can indicate
+#' first, second, and third choices. If a voter's first choice is eliminated
+#' (by being last in the count across voters), the second choice is promoted to
+#' that voter's first choice, and similarly third -> second. Eliminations are
+#' done successively until one candidate has a majority of the first-choice
+#' votes. For additional detail, see
+#' https://vote.minneapolismn.gov/ranked-choice-voting/details/
+#'
+#' @source Ballot data from the Minneapolis city government:
+#' https://vote.minneapolismn.gov/results-data/election-results/2017/mayor-data/
+#'
+#' @examples
+#' data(Minneapolis2017)
+#' str(Minneapolis2017)
+"Minneapolis2017"
 
 
 
