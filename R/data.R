@@ -472,3 +472,147 @@
 
 
 
+### NCHS ####
+
+#' @title Health Statistics Data 1999-2004
+#'
+#' @description These are survey data collected by the US National Center for
+#' Health Statistics (NCHS). Each year, approximately 5,000 individuals are
+#' interviewed in their homes. The data cover 1999-2004.
+#'
+#' Note that the NHANES package provides data from 2009-2012, including more
+#' health, life-style, and socio-economic variables
+#'
+#' @docType data
+#'
+#' @usage data("NCHS")
+#'
+#' @format A data frame with 31126 observations on the following 31 variables:
+#' \describe{
+#'   \item{sex}{"male" or "female"}
+#'   \item{age}{years}
+#'   \item{pregnant}{yes" or "no"}
+#'   \item{ethnicity}{Mexican American, Other Hispanic, Non-Hispanic White,
+#'   Non-Hispanic Black, or Other/Multi}
+#'   \item{death}{"alive", "cardiovascular death" or "other death"}
+#'   \item{followup}{months of follow up (for mortality data)}
+#'   \item{smoker}{"yes" or "no"}
+#'   \item{diabetic}{"yes" or "no"}
+#'   \item{height}{in meters}
+#'   \item{weight}{in kilograms}
+#'   \item{waist}{waist circumference (meters)}
+#'   \item{wci}{the proposed body shape index}
+#'   \item{bmi}{body mass index}
+#'   \item{ptfat}{percent trunk fat}
+#'   \item{tfat}{mass of trunk fat}
+#'   \item{lfat}{limb fat}
+#'   \item{llean}{limb lean tissue}
+#'   \item{lbmi}{lean-tissue only BMI}
+#'   \item{fbmi}{fat-only BMI}
+#'   \item{bbmi}{bone BMI}
+#'   \item{pfat}{percent fat}
+#'   \item{bmd}{bone mineral density}
+#'   \item{fmhm_other}{Framingham risk score}
+#'   \item{hdl}{HDL cholesterol}
+#'   \item{chol}{cholesterol (presumably, LDL)}
+#'   \item{bps}{systolic blood pressure, mmHg}
+#'   \item{bpd}{diastolic blood pressure, mmHg}
+#'   \item{income}{ratio of family income to poverty threshold. 5 indicates a
+#'   ratio greater than or equal to 5}
+#'   \item{pop_weight}{population weight, for adding up over the US population}
+#'   \item{psu}{primary sampling unit}
+#'   \item{stratum}{sampling stratum}
+#' }
+#'
+#' @source These data were assembled from NCHS/NHANES 1999-2004 sources by
+#' Dr. Nir Krakauer at City College of New York.
+#'
+#' @seealso The `NHANES` package available through CRAN.
+#'
+#' @examples
+#' data(NCHS)
+#' str(NCHS)
+"NCHS"
+
+
+### NCI60 ####
+
+#' @title Gene expression in cancer.
+#'
+#' @description The data come from a National Cancer Institute study of gene
+#' expression in human cancer cell lines representing leukemia, melanoma and
+#' cancers of the lung, colon, brain, ovary, breast, prostate, and kidney.
+#'
+#' The expression data, NCI60 is a dataframe of 41078 gene probes (rows) and
+#' 60 cell lines (columns). The first column, Probe gives the name of the
+#' Agilent microarray probe. Each of the remaining columns is named for a cell
+#' line. The value is the log-2 expression associated with that probe for the
+#' cell line.
+#'
+#' `NCI60cells` gives information about each cell line.
+#'
+#' @docType data
+#'
+#' @usage data("NCI60")
+#'
+#' @format A data frame with 41,078 observations on 61 variables representing
+#' the `probe` and the 60 cell lines drawn from various sorts of cancer.
+#'
+#' @source See https://dtp.cancer.gov/discovery_development/nci-60/
+#'
+#' @references
+#' Staunton et al.(http://www.pnas.org/content/98/19/10787.full
+#'
+#' D.T. Ross et al. (2000) Nature Genetics, 24(3):227-234
+#' http://discover.nci.nih.gov/host/2000_systematic_abstract.jsp
+#'
+#' @seealso `NCI60cells`
+#'
+#' @examples
+#' data(NCI60)
+#' str(NCI60)
+"NCI60"
+
+
+### NCI60cells ####
+
+#' @title Cell Line descriptions in the NCI-60 dataset
+#'
+#' @description NCI60cells gives information about the cell-line tissue and the
+#' person from whom the sample was collected.
+#'
+#' @docType data
+#'
+#' @usage data("NCI60cells")
+#'
+#' @format A data frame with 60 observations on the following 12 variables:
+#' \describe{
+#'   \item{cellLine}{Name from NCI-60 human tumor cell lines screen}
+#'   \item{tissue}{The cancer tissue from which the cell line originated:
+#'   Breast, CNS, Colon, Leukemia, Melanoma, Non-Small Cell Lung, Ovarian,
+#'   Prostate, and Renal}
+#'   \item{age}{of the cell line donor}
+#'   \item{sex}{of the cell line donor}
+#'   \item{ploidy}{the number of sets of chromosomes in the cell}
+#'   \item{prior.treatment}{treatment of the donor}
+#'   \item{epithelial}{is the cell of epithelial origin}
+#'   \item{histology}{}
+#'   \item{p53}{status of p53 protein believed to help regulate gene expression:
+#'   mutated "MT", wild-type "WT", "?" }
+#'   \item{mdr}{multidrug resistence (numeric)}
+#'   \item{source}{information about where the cells were collected from}
+#'   \item{doublingtime}{numeric}
+#' }
+#'
+#' @details These are the cell-line descriptions corresponding to the columns
+#' in the `NCI60` expression dataset.
+#'
+#' @seealso `NCI60`
+#'
+#' @examples
+#' data(NCI60cells)
+#' str(NCI60cells)
+"NCI60cells"
+
+
+
