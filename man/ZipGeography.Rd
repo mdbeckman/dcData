@@ -22,9 +22,6 @@ A data frame with 42741 observations on the following 13 variables:
   \item{ZIP}{character vector for the ZIP code area}
 }
 }
-\source{
-XYZ \href{}
-}
 \usage{
 data("ZipGeography")
 }
