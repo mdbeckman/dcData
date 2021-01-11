@@ -5,7 +5,7 @@ Version: 0.1.0
 Authors@R: c(
   person("Daniel", "Kaplan", role = "aut"),
   person("Matthew", "Beckman", email = "mdb268@psu.edu", role = c("aut", "cre")))
-Description: Data sets accompanying the *DataComputing* eBook 
+Description: Data sets accompanying *Data Computing (2nd ed.)* by Kaplan & Beckman
     (https://dtkaplan.github.io/DataComputingEbook/) used to teach wrangling 
     and visualization techniques that turn data into information.
 License: CC0

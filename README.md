@@ -9,10 +9,10 @@
 status](https://github.com/mdbeckman/dcData/workflows/R-CMD-check/badge.svg)](https://github.com/mdbeckman/dcData/actions)
 <!-- badges: end -->
 
-The `dcData` package includes data sets that accompany the
-*DataComputing* eBook <https://dtkaplan.github.io/DataComputingEbook/>
-used to teach wrangling and visualization techniques that turn data into
-information.
+The `dcData` package includes data sets that accompany *Data Computing
+(2nd edition)* by Kaplan & Beckman
+[(eBook)](https://dtkaplan.github.io/DataComputingEbook/) used to teach
+wrangling and visualization techniques that turn data into information.
 
 ## Installation
 
