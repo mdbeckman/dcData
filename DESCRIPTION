@@ -6,8 +6,8 @@ Authors@R: c(
   person("Daniel", "Kaplan", role = "aut"),
   person("Matthew", "Beckman", email = "mdb268@psu.edu", role = c("aut", "cre")))
 Description: Data sets accompanying the *DataComputing* eBook 
-    <https://dtkaplan.github.io/DataComputingEbook/> used to teach wrangling 
-    and visualization techniques for turning data into information.
+    (https://dtkaplan.github.io/DataComputingEbook/) used to teach wrangling 
+    and visualization techniques that turn data into information.
 License: CC0
 Encoding: UTF-8
 LazyData: true
