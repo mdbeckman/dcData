@@ -5,6 +5,7 @@
 
 
 ## R CMD check results
+* New submission
 
 ── R CMD check results ─────────────────────────────────────── dcData 0.1.0 ────
 Duration: 1m 29.6s
