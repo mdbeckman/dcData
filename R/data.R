@@ -793,4 +793,102 @@
 "WorldCities"
 
 
+### ZipDemography ####
+
+#' @title Demographic information for most US ZIP Codes (Postal Codes)
+#'
+#' @description Data on the population in each of ZIP code region.
+#'
+#' @docType data
+#'
+#' @usage data("ZipDemography")
+#'
+#' @format A data frame with 42741 observations on the following 44 variables:
+#' \describe{
+#'   \item{Totalpopulation}{}
+#'   \item{Male}{}
+#'   \item{Female}{}
+#'   \item{MedianAge}{}
+#'   \item{Under5years}{}
+#'   \item{X18yearsandover}{}
+#'   \item{X65yearsandover}{}
+#'   \item{Onerace}{}
+#'   \item{White}{}
+#'   \item{BlackorAfricanAmerican}{}
+#'   \item{AmericanIndianandAlaskaNative}{}
+#'   \item{Asian}{}
+#'   \item{NativeHawaiianandOtherPacificIslander}{}
+#'   \item{Someotherrace}{}
+#'   \item{Twoormoreraces}{}
+#'   \item{HispanicorLatinoofanyrace}{}
+#'   \item{AverageHouseholdSize}{}
+#'   \item{Averagefamilysize}{}
+#'   \item{Totalhousingunits}{}
+#'   \item{Occupiedhousingunits}{}
+#'   \item{Owneroccupiedhousingunits}{}
+#'   \item{Renteroccupiedhousingunits}{}
+#'   \item{Vacanthousingunits}{}
+#'   \item{Population25yearsandover}{}
+#'   \item{Highschoolgraduateorhigher}{}
+#'   \item{Bachelorsdegreeorhigher}{}
+#'   \item{Civilianveterans}{}
+#'   \item{Disabilitystatuspopulation21to64years}{}
+#'   \item{Foreignborn}{}
+#'   \item{Nowmarriedpopulation15yearsandover}{}
+#'   \item{SpeakalanguageotherthanEnglishathome5yearsandover}{}
+#'   \item{Inlaborforcepopulation16yearsandover}{}
+#'   \item{Meantraveltimetoworkinminutespopulation16yearsandolder}{}
+#'   \item{Medianhouseholdincomedollars}{}
+#'   \item{Medianfamilyincomedollars}{}
+#'   \item{Percapitaincomedollars}{}
+#'   \item{Familiesbelowpovertylevel}{}
+#'   \item{Individualsbelowpovertylevel}{}
+#'   \item{Singlefamilyowneroccupiedhomes}{}
+#'   \item{Medianvaluedollars}{}
+#'   \item{Medianofselectedmonthlyownercosts}{}
+#'   \item{WithaMortgage}{}
+#'   \item{Notmortgaged}{}
+#'   \item{ZIP}{}
+#' }
+#'
+#'
+#' @examples
+#' data(ZipDemography)
+#' str(ZipDemography)
+"ZipDemography"
+
+
+### ZipGeography ####
+
+#' @title Geographic information by US Zip Codes (Postal Codes)
+#'
+#' @description Information about the location, area, and housing units in each ZIP code area.
+#'
+#' @docType data
+#'
+#' @usage data("ZipGeography")
+#'
+#' @format A data frame with 42741 observations on the following 13 variables:
+#' \describe{
+#'   \item{State}{}
+#'   \item{Population}{the population of the ZIP area}
+#'   \item{County}{the name of the county to which the ZIP area belongs}
+#'   \item{HousingUnits}{}
+#'   \item{LandArea}{}
+#'   \item{WaterArea}{}
+#'   \item{CityName}{}
+#'   \item{AreaCode}{}
+#'   \item{Timezone}{}
+#'   \item{Latitude}{}
+#'   \item{Longitude}{}
+#'   \item{PostOfficeName}{the name of the post office serving the ZIP}
+#'   \item{ZIP}{character vector for the ZIP code area}
+#' }
+#'
+#' @examples
+#' data(ZipGeography)
+#' str(ZipGeography)
+"ZipGeography"
+
+
 
