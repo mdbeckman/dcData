@@ -615,4 +615,182 @@
 "NCI60cells"
 
 
+### OrdwayBirds ####
+
+#' @title Birds captured and released at Ordway, complete and uncleaned
+#'
+#' @description The historical record of birds captured and released at the
+#' Katharine Ordway Natural History Study Area, a 278-acre preserve in Inver
+#' Grove Heights, Minnesota, owned and managed by Macalester College.
+#'
+#' @docType data
+#'
+#' @usage data("OrdwayBirds")
+#'
+#' @format A data frame with 15,829 observations on the following 26 variables:
+#' \describe{
+#'   \item{bogus}{}
+#'   \item{Timestamp}{indicates when the data were entered into an electronic
+#'   record, not anything about the bird being described}
+#'   \item{Year}{year of capture}
+#'   \item{Day}{day of capture}
+#'   \item{Month}{month of capture}
+#'   \item{CaptureTime}{time of capture}
+#'   \item{SpeciesName}{}
+#'   \item{Sex}{}
+#'   \item{Age}{}
+#'   \item{BandNumber}{}
+#'   \item{TrapID}{}
+#'   \item{Weather}{}
+#'   \item{BandingReport}{}
+#'   \item{RecaptureYN}{}
+#'   \item{RecaptureMonth}{}
+#'   \item{RecaptureDay}{}
+#'   \item{Condition}{}
+#'   \item{Release}{}
+#'   \item{Comments}{}
+#'   \item{DataEntryPerson}{}
+#'   \item{Weight}{}
+#'   \item{WingChord}{}
+#'   \item{Temperature}{}
+#'   \item{RecaptureOriginal}{}
+#'   \item{RecapturePrevious}{}
+#'   \item{TailLength}{}
+#' }
+#'
+#' @details There are many extraneous levels of variables such as species. Part
+#' of the purpose of this data set is to teach about data cleaning.
+#'
+#' @source Jerald Dosch, Dept. of Biology, Macalester College: the manager of the Study Area.
+#'
+#' @seealso `OrdwaySpeciesNames`
+#'
+#' @examples
+#' data(OrdwayBirds)
+#' str(OrdwayBirds)
+"OrdwayBirds"
+
+
+
+### OrdwaySpeciesNames ####
+
+#' @title Corrected Species Names for the Ordway Birds
+#'
+#' @description This data frame lists all the species name that appear in
+#' `OrdwayBirds`. In many cases, the species name was mis-spelled in the
+#' original. As a result, many birds are listed as separate species even
+#' though, in reality, they all belong to the same species. For each
+#' potentially mis-spelled species name, this table gives a standardized name.
+#'
+#' @docType data
+#'
+#' @usage data("OrdwaySpeciesNames")
+#'
+#' @format A data frame with 265 observations on the following 2 variables:
+#' \describe{
+#'   \item{SpeciesName}{The original spelling, or misspelling, of a bird species.}
+#'   \item{SpeciesNameCleaned}{Corrected spelling (or NA if the original was not identifiable.)}
+#' }
+#'
+#' @source Daniel Kaplan and students in a 2013 Data and Computing Fundamentals
+#' class at Macalester College (Saint Paul, MN) read through original names
+#' in `OrdwayBirds` and typed corrected spelling shown in `SpeciesNameCleaned`.
+#'
+#'
+#' @seealso `OrdwayBirds`
+#'
+#' @examples
+#' data(OrdwaySpeciesNames)
+#' str(OrdwaySpeciesNames)
+"OrdwaySpeciesNames"
+
+
+
+### RegisteredVoters ####
+
+#' @title A sample of the voter registration list for Wake County, North
+#' Carolina in Fall 2010.
+#'
+#' @description These are data from the Wake County Board of Elections. As so
+#' often happens, the web sites with the documentation and data are no longer
+#' current.
+#'
+#' @docType data
+#'
+#' @usage data("RegisteredVoters")
+#'
+#' @format A data frame with 10,000 observations on the following 19 variables:
+#' \describe{
+#'   \item{gender}{M = male, F = female, U = unknown}
+#'   \item{party}{Political affiliation: DEM = Democratic, LIB = Libertarian, REP = Republican, UNA = Unaffiliated}
+#'   \item{Age}{age in years}
+#'   \item{race}{race: A = Asian, B = black or African American, I = American Indian or Alaska Native,
+#'   M = More than one race, O = Other, U = Undesignated, W = White}
+#'   \item{voter_reg_num}{Unique serial number for each voter}
+#'   \item{last_name}{Voter's last name}
+#'   \item{first_name}{Voter's first name}
+#'   \item{midl_name}{Voter's middle name}
+#'   \item{name_sufx}{Suffix, if any, on the voter's name}
+#'   \item{mail_city}{Component of voter's mailing address}
+#'   \item{mail_state_cd}{Component of voter's mailing address}
+#'   \item{mail_street}{Component of voter's mailing address}
+#'   \item{mail_zip_code}{Component of voter's mailing address}
+#'   \item{registr_dt}{Component of voter's mailing address}
+#'   \item{res_city}{Component of voter's mailing address}
+#'   \item{res_state_cd}{Component of voter's mailing address}
+#'   \item{res_unit_num}{Component of voter's mailing address}
+#'   \item{res_zip_code}{Component of voter's mailing address}
+#'   \item{voter_status}{Status of the voter}
+#' }
+#'
+#' @details For additional fields, see the original documentation at
+#' http://msweb03.co.wake.nc.us/bordelec/Waves/boedatadescription.pdf
+#'
+#' @source The data file is publicly available from the Wake County (NC) Board
+#' of Elections. http://msweb03.co.wake.nc.us/bordelec/Waves/WavesDownload.asp.
+#' It's in a Windows self-extracting format. Prof. Shilad Sen of Macalester
+#' College (Saint Paul, MN) reformatted the data to accompany the DataComputing
+#' book.
+#'
+#' The full data set, containing 583,092 records, is available at
+#' http://www.mosaic-web.org/go/Repository/DannyKaplan/WakeCountyBOE.Rdata
+#' You can access it by downloading the file, then loading it into your R
+#' session. The data frame is `WakeCountyBOE`.
+#'
+#' @examples
+#' data(RegisteredVoters)
+#' str(RegisteredVoters)
+"RegisteredVoters"
+
+
+### WorldCities ####
+
+#' @title Cities and their populations
+#'
+#' @description A list of world cities accomanied by location information.
+#'
+#' @docType data
+#'
+#' @usage data("WorldCities")
+#'
+#' @format A data frame with 23018 observations on the following 10 variables:
+#' \describe{
+#'   \item{code}{The ISO (?) city code}
+#'   \item{name}{Name of the city}
+#'   \item{latitude}{location in degrees}
+#'   \item{longitude}{location in degrees}
+#'   \item{country}{Two letter country code}
+#'   \item{countryRegion}{A numerical region}
+#'   \item{population}{}
+#'   \item{regionCode}{ISO (?) Code}
+#'   \item{region}{Name of the region}
+#'   \item{date}{Date estimate made}
+#' }
+#'
+#' @examples
+#' data(WorldCities)
+#' str(WorldCities)
+"WorldCities"
+
+
 
