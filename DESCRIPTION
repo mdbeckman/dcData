@@ -1,7 +1,7 @@
 Package: dcData
 Type: Package
 Title: Data Sets Accompanying DataComputing eBook
-Version: 0.1.0
+Version: 0.1.0.9000
 Authors@R: c(
   person("Daniel", "Kaplan", role = "aut"),
   person("Matthew", "Beckman", email = "mdb268@psu.edu", role = c("aut", "cre")))
