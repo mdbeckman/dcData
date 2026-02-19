@@ -15,8 +15,8 @@ knitr::opts_chunk$set(
 
 # dcData
 
+
 <!-- badges: start -->
-[![R build status](https://github.com/mdbeckman/dcData/workflows/R-CMD-check/badge.svg)](https://github.com/mdbeckman/dcData/actions)
 [![R-CMD-check](https://github.com/mdbeckman/dcData/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/mdbeckman/dcData/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
