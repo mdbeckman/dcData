@@ -5,14 +5,14 @@
 
 <!-- badges: start -->
 
-[![R build
-status](https://github.com/mdbeckman/dcData/workflows/R-CMD-check/badge.svg)](https://github.com/mdbeckman/dcData/actions)
+[![R-CMD-check](https://github.com/mdbeckman/dcData/actions/workflows/R-CMD-check.yaml/badge.svg?branch=master)](https://github.com/mdbeckman/dcData/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The `dcData` package includes data sets that accompany *Data Computing
 (2nd edition)* by Kaplan & Beckman
 [(eBook)](https://dtkaplan.github.io/DataComputingEbook/) used to teach
-wrangling and visualization techniques that turn data into information.
+data wrangling and visualization techniques that turn data into
+information.
 
 ## Installation
 
