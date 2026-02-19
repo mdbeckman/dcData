@@ -1,12 +1,12 @@
 Package: dcData
 Type: Package
 Title: Data Sets Accompanying DataComputing eBook
-Version: 0.1.0.9000
+Version: 0.1.1
 Authors@R: c(
   person("Daniel", "Kaplan", role = "aut"),
   person("Matthew", "Beckman", email = "mdb268@psu.edu", role = c("aut", "cre")))
 Description: Data sets accompanying *Data Computing (2nd ed.)* by Kaplan & Beckman
-    (https://dtkaplan.github.io/DataComputingEbook/) used to teach wrangling 
+    (<https://dtkaplan.github.io/DataComputingEbook/>) used to teach wrangling 
     and visualization techniques that turn data into information.
 License: CC0
 Encoding: UTF-8
