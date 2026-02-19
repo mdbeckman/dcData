@@ -11,6 +11,7 @@ Description: Data sets accompanying *Data Computing (2nd ed.)* by Kaplan & Beckm
 License: CC0
 Encoding: UTF-8
 LazyData: true
+LazyDataCompression: xz
 Depends: 
     R (>= 2.10)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.3.3
